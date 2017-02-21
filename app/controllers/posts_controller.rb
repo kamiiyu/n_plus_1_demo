@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
+    @posts2 = Post.last_comments
     @posts = Post.all
   end
 
